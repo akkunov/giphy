@@ -1,0 +1,76 @@
+html{
+    font-size: 10px;
+}
+
+:root{
+    --screen-width : 100vw
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    background: linear-gradient(45deg, red, blue);
+    align-items: center;
+}
+.header__container{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+
+.logo img{
+    width: clamp(100px, 30vw , 30vw);
+}
+
+.input__block input{
+    width: clamp(100px, 30vw , 30vw);
+    height: 3.5rem;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.gif--container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(20rem, 1fr));
+    padding: 1rem;
+}
+@media (max-width: 987px) {
+    .gif--container{
+        grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(25vw, 1fr));
+    }
+}
+.gif--image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+#clearAllGifs{
+    padding: 1rem;
+    border-radius: .4rem;
+    offset: none;
+    outline: none;
+    border: none;
+    background-color: white;
+}
