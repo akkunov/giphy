@@ -2,7 +2,7 @@ const container = document.querySelector('.gif--container');
 const clearAllGifs  = document.getElementById('clearAllGifs')
 const input = document.getElementById('searchGif');
 const screenHeight = window.innerHeight;
-let limit = Math.ceil(screenHeight / 200) * 4; // Dynamic limit based on screen height
+let limit = Math.ceil(screenHeight / 200) * 4;
 console.log(limit)
 let searchTerm = '';
 let offset = 0;
